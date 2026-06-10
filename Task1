@@ -1,0 +1,136 @@
+CYBER SECURITY INTERNSHIP
+
+VULNERABILITY ASSESSMENT REPORT FOR A LIVE WEBSITE
+
+Task 1
+
+Submitted By: Avinash M
+
+Internship Organization: Future Interns
+
+Domain: Cyber Security
+
+Repository Name: FUTURE_CS_01
+
+Submission Date: June 2026
+
+---
+
+Project Objective
+
+The objective of this project is to perform a basic vulnerability assessment of a web application, identify potential security weaknesses, classify risks, and provide remediation recommendations.
+
+---
+
+Executive Summary
+
+A vulnerability assessment was conducted on a web application environment to identify common security weaknesses. The assessment focused on security headers, authentication controls, information disclosure, and input validation practices.
+
+The identified findings were categorized based on their potential impact and likelihood of exploitation.
+
+---
+
+Finding 1: Missing Security Headers
+
+Risk Level
+
+Medium
+
+Description
+
+Security headers help protect web applications from common browser-based attacks such as clickjacking, content injection, and MIME-type attacks.
+
+Impact
+
+The absence of security headers may increase the attack surface of the application.
+
+Recommendation
+
+Implement:
+
+- Content Security Policy (CSP)
+- X-Frame-Options
+- X-Content-Type-Options
+- Strict-Transport-Security (HSTS)
+
+---
+
+Finding 2: Information Disclosure
+
+Risk Level
+
+Low
+
+Description
+
+The application may reveal unnecessary information through error messages, server responses, or version details.
+
+Impact
+
+Attackers may use exposed information to plan targeted attacks.
+
+Recommendation
+
+- Remove unnecessary debug information.
+- Limit server banner disclosure.
+- Use generic error messages.
+
+---
+
+Finding 3: Weak Authentication Controls
+
+Risk Level
+
+High
+
+Description
+
+Weak password policies and lack of multi-factor authentication can increase the risk of account compromise.
+
+Impact
+
+Unauthorized access to user accounts and sensitive information.
+
+Recommendation
+
+- Enforce strong password policies.
+- Implement Multi-Factor Authentication (MFA).
+- Enable account lockout protections.
+
+---
+
+Finding 4: Input Validation Issues
+
+Risk Level
+
+Medium
+
+Description
+
+Improper validation of user input may introduce security vulnerabilities.
+
+Impact
+
+Potential injection attacks and application instability.
+
+Recommendation
+
+- Validate all user inputs.
+- Sanitize special characters.
+- Use secure coding practices.
+
+---
+
+Risk Summary
+
+Finding| Risk Level
+Missing Security Headers| Medium
+Information Disclosure| Low
+Weak Authentication Controls| High
+Input Validation Issues| Medium
+
+---
+
+Conclusion
+
+The assessment identified several common web application security concerns. Implementing the recommended remediation measures will improve the application's security posture, reduce attack surface exposure, and enhance overall resilience against cyber threats.
